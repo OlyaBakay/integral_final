@@ -85,15 +85,15 @@ int main()
     t1 = clock();
 
     int num_of_threads;
-    num_of_threads = atoi(readConfig("config.txt")[2].c_str());
+    num_of_threads = atoi(readConfig("/home/bakay/CLionProjects/integral_final/config.txt")[2].c_str());
 
     thread threads[num_of_threads];
     // choose random numbers   --   later: read from configuration file
-    float x0 = atoi(readConfig("config.txt")[3].c_str());;
-    float x = atoi(readConfig("config.txt")[4].c_str());;
-    float y0 = atoi(readConfig("config.txt")[5].c_str());;
-    float y = atoi(readConfig("config.txt")[6].c_str());;
-    int m = atoi(readConfig("config.txt")[7].c_str());;
+    float x0 = atoi(readConfig("/home/bakay/CLionProjects/integral_final/config.txt")[3].c_str());;
+    float x = atoi(readConfig("/home/bakay/CLionProjects/integral_final/config.txt")[4].c_str());;
+    float y0 = atoi(readConfig("/home/bakay/CLionProjects/integral_final/config.txt")[5].c_str());;
+    float y = atoi(readConfig("/home/bakay/CLionProjects/integral_final/config.txt")[6].c_str());;
+    int m = atoi(readConfig("/home/bakay/CLionProjects/integral_final/config.txt")[7].c_str());;
     float pr = 0.05;
 
     float x_step = (x - x0) / (pr * num_of_threads);    /// 10
